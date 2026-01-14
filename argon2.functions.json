@@ -1,0 +1,62 @@
+[
+    {
+        "name": "argon2d_verify",
+        "parameters": {
+            "required": [
+                {
+                    "name": "encoded",
+                    "type": "string"
+                },
+                {
+                    "name": "pwd",
+                    "type": "string"
+                }
+            ]
+        },
+        "returnType": "boolean",
+        "detail": "argon2d_verify(string $encoded, string $pwd): boolean",
+        "value": "argon2d_verify($0, $1)",
+        "documentation": "Verify a argon2d hash.",
+        "link": "[Full documentation](https://github.com/halon-extras/argon2)"
+    },
+    {
+        "name": "argon2i_verify",
+        "parameters": {
+            "required": [
+                {
+                    "name": "encoded",
+                    "type": "string"
+                },
+                {
+                    "name": "pwd",
+                    "type": "string"
+                }
+            ]
+        },
+        "returnType": "boolean",
+        "detail": "argon2i_verify(string $encoded, string $pwd): boolean",
+        "value": "argon2i_verify($0, $1)",
+        "documentation": "Verify a argon2i hash.",
+        "link": "[Full documentation](https://github.com/halon-extras/argon2)"
+    },
+    {
+        "name": "argon2id_verify",
+        "parameters": {
+            "required": [
+                {
+                    "name": "encoded",
+                    "type": "string"
+                },
+                {
+                    "name": "pwd",
+                    "type": "string"
+                }
+            ]
+        },
+        "returnType": "boolean",
+        "detail": "argon2id_verify(string $encoded, string $pwd): boolean",
+        "value": "argon2id_verify($0, $1)",
+        "documentation": "Verify a argon2id hash.",
+        "link": "[Full documentation](https://github.com/halon-extras/argon2)"
+    }
+]

@@ -1,0 +1,11 @@
+import { argon2d_verify, argon2i_verify, argon2id_verify } from "extras://argon2";
+
+// ok
+echo argon2d_verify(''$argon2d$v=19$m=16,t=2,p=1$Z0E4ODUyckw1SmFWQ2hqbA$i4VZhbsITfwLIRPfkUqaFQ'', "hello");
+echo argon2i_verify(''$argon2i$v=19$m=16,t=2,p=1$Z0E4ODUyckw1SmFWQ2hqbA$rr6IyJTTuhY9J3z/gaWzEA'', "hello");
+echo argon2id_verify(''$argon2id$v=19$m=16,t=2,p=1$Z0E4ODUyckw1SmFWQ2hqbA$09T6+Fs9lxnpFqqhlA5lVg'', "hello");
+
+// fail
+echo argon2d_verify(''$argon2d$v=19$m=16,t=2,p=1$Z0E4ODUyckw1SmFWQ2hqbA$i4VZhbsITfwLIRPfkUqaFQ'', "world");
+echo argon2i_verify(''$argon2i$v=19$m=16,t=2,p=1$Z0E4ODUyckw1SmFWQ2hqbA$rr6IyJTTuhY9J3z/gaWzEA'', "world");
+echo argon2id_verify(''$argon2id$v=19$m=16,t=2,p=1$Z0E4ODUyckw1SmFWQ2hqbA$09T6+Fs9lxnpFqqhlA5lVg'', "world");
