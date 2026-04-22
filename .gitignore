@@ -3,3 +3,4 @@
 /build/vscode
 .devcontainer/smtpd/dist
 .DS_Store
+license.key
